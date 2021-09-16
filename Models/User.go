@@ -27,7 +27,7 @@ func GetUserByID(user *User, id string) (err error) {
 
 }
 
-func UpdateUser(user *User) (err error) {
+func UpdateUser(user *User,id string) (err error) {
 	fmt.Println(user)
 	Config.DB.Save(user)
 	return nil
